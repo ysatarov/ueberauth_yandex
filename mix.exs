@@ -26,7 +26,7 @@ defmodule UeberauthYandex.Mixfile do
   defp deps do
     [
      {:oauth2, "~> 0.9"},
-     {:ueberauth, "~> 0.4"},
+     {:ueberauth, "~> 0.7"},
 
      {:credo, "~> 0.8", only: [:dev, :test]},
      {:earmark, ">= 0.0.0", only: :dev},

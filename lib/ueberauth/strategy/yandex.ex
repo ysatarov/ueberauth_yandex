@@ -19,8 +19,10 @@ defmodule Ueberauth.Strategy.Yandex do
       [scope: scopes]
       |> with_optional(:login_hint, conn)
       |> with_optional(:display, conn)
+      |> with_optional(:force_confirm, conn)
       |> with_param(:login_hint, conn)
       |> with_param(:display, conn)
+      |> with_param(:force_confirm, conn)
       |> with_param(:state, conn)
 
     opts = [redirect_uri: callback_url(conn)]
